@@ -49,12 +49,12 @@ app.get('/api/candidate/:id', (req, res) => {
     })
 })
 
-db.query(`SELECT * FROM candidates WHERE id = 1`, (err, row) => {
-    if (err) {
-        console.log(err)
-    }
-    console.log(row)
-})
+// db.query(`SELECT * FROM candidates WHERE id = 1`, (err, row) => {
+//     if (err) {
+//         console.log(err)
+//     }
+//     console.log(row)
+// })
 
 app.delete('/api/candidate/:id', (req, res) => {
     const sql = `DELETE FROM candidates WHERE id = ?`;
